@@ -285,7 +285,7 @@ class _Sign_UpState extends State<Sign_Up> {
                           border: InputBorder.none,
                           labelStyle: TextStyle(color: Colors.black),
                           labelText: 'First Name',
-                          hintText: "Adam Alan",
+                          hintText: "Adam ",
                           prefixIcon: Icon(
                             Icons.account_circle_rounded,
                             color: Colors.black,
@@ -293,7 +293,7 @@ class _Sign_UpState extends State<Sign_Up> {
 
                         ),
                         onChanged: (String value) {
-                          final nameRegex = RegExp(r'^[A-Z][a-z]* [A-Z][a-z]+$');
+                          final nameRegex = RegExp(r'^[A-Z][a-z]+$');
 
                           setState(() {
                             if (nameRegex.hasMatch(value)) {
@@ -341,7 +341,7 @@ class _Sign_UpState extends State<Sign_Up> {
                           border: InputBorder.none,
                           labelStyle: TextStyle(color: Colors.black),
                           labelText: 'Last Name',
-                          hintText: "Adam Alan",
+                          hintText: "Alan",
                           prefixIcon: Icon(
                             Icons.account_circle_rounded,
                             color: Colors.black,
@@ -350,7 +350,7 @@ class _Sign_UpState extends State<Sign_Up> {
 
                         ),
                         onChanged: (String value) {
-                          final nameRegex = RegExp(r'^[A-Z][a-z]* [A-Z][a-z]+$');
+                          final nameRegex = RegExp(r'^[A-Z][a-z]+$');
 
 
                           setState(() {
@@ -797,8 +797,11 @@ class _Sign_UpState extends State<Sign_Up> {
                                     'Sign Up',
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 19),
-                                  ))),
-                        )),
+                                  )
+                              )
+                          ),
+                        )
+                    ),
                     TextButton(
                       onPressed: () {
                         // Navigator.push(
