@@ -341,7 +341,7 @@ class _Sign_UpState extends State<Sign_Up> {
                           border: InputBorder.none,
                           labelStyle: TextStyle(color: Colors.black),
                           labelText: 'Last Name',
-                          hintText: "Alan",
+                          hintText: "Allan",
                           prefixIcon: Icon(
                             Icons.account_circle_rounded,
                             color: Colors.black,
