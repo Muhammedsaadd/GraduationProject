@@ -55,6 +55,7 @@ class _MyAppState extends State<MyApp> {
     // gender =[];
     workoutname=[] ;
     widg=[];
+    imgPath=[];
     print("data23 $data");
     var fname;
     var lname;
@@ -65,7 +66,7 @@ class _MyAppState extends State<MyApp> {
       // fullName .add(fname + " " + lname);
       // // mobileNumber.add(data[i]["Email"]);
       workoutname.add(data[i]["WorkoutName"]);
-      imgPath.add(data[i]["WorkoutName"]);
+      imgPath.add(data[i]["Image"]);
       // rate.add(data[i]["Rate"]);
     }
     // print("Workout Name $workoutname");
@@ -93,7 +94,7 @@ class _MyAppState extends State<MyApp> {
 
                           image: DecorationImage(
                               image: AssetImage(
-                                  "images/gym-handsome-man-during-workout_144627-6229.jpg"),
+                                  "${imgPath[i]}"),
                               fit: BoxFit.cover)),
                     ),
                     Container(
@@ -125,7 +126,7 @@ class _MyAppState extends State<MyApp> {
 
                           image: DecorationImage(
                               image: AssetImage(
-                                  "images/gym-handsome-man-during-workout_144627-6229.jpg"),
+                                  "${imgPath[i]}"),
                               fit: BoxFit.cover)),
                     ),
                     Container(
@@ -146,7 +147,7 @@ class _MyAppState extends State<MyApp> {
 
                           image: DecorationImage(
                               image: AssetImage(
-                                  "images/gym-handsome-man-during-workout_144627-6229.jpg"),
+                                  "${imgPath[i+1]}"),
                               fit: BoxFit.cover)),
                     ),
                     Container(
@@ -160,7 +161,7 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           );
-          print("saad $widg");
+          print("saad $imgPath");
         }
 
       }
@@ -179,7 +180,7 @@ class _MyAppState extends State<MyApp> {
 
                         image: DecorationImage(
                             image: AssetImage(
-                                "images/gym-handsome-man-during-workout_144627-6229.jpg"),
+                                "${imgPath[i]}"),
                             fit: BoxFit.cover)),
                   ),
                   Container(
@@ -200,7 +201,7 @@ class _MyAppState extends State<MyApp> {
 
                         image: DecorationImage(
                             image: AssetImage(
-                                "images/gym-handsome-man-during-workout_144627-6229.jpg"),
+                                "${imgPath[i+1]}"),
                             fit: BoxFit.cover)),
                   ),
                   Container(
