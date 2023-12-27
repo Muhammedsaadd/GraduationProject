@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
@@ -79,20 +79,20 @@ class _Sign_InState extends State<Sign_In> {
     if (data.toString() == "Success") {
       getUserData(mobile.text);
       print("Login Success");
-      await Fluttertoast.showToast (
-        msg: 'Login Successful',
-        backgroundColor: Colors.yellowAccent,
-        textColor: Colors.white,
-        toastLength: Toast.LENGTH_SHORT,
-      );
+      // await Fluttertoast.showToast (
+      //   msg: 'Login Successful',
+      //   backgroundColor: Colors.yellowAccent,
+      //   textColor: Colors.white,
+      //   toastLength: Toast.LENGTH_SHORT,
+      // );
 
     } else {
-      Fluttertoast.showToast (
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        msg: 'Incorrect Username or Password',
-        toastLength: Toast.LENGTH_SHORT,
-      );
+      // Fluttertoast.showToast (
+      //   backgroundColor: Colors.red,
+      //   textColor: Colors.white,
+      //   msg: 'Incorrect Username or Password',
+      //   toastLength: Toast.LENGTH_SHORT,
+      // );
     }
   }
 

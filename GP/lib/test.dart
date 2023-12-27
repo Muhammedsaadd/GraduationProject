@@ -1,16 +1,34 @@
+// void main() {
+//   // Example usage
+//   DateTime startDate = DateTime(2023, 1, 1);
+//   DateTime endDate = DateTime(2024, 12, 31);
+//   DateTime currentDate = DateTime.now();
+//
+//   double percentage = calculatePercentage(startDate, endDate, currentDate);
+//
+//   print("Percentage of time elapsed: ${percentage.toStringAsFixed(2)}%");
+// }
+//
+
+
+
 void main() {
-  // Example usage:
-  DateTime startDate = DateTime(2023, 12, 10); // Replace with your actual start date
-  DateTime endDate = DateTime(2024, 1, 3); // Replace with your actual end date
+  try {
+    // Example usage
+    DateTime currentDate = DateTime.now();
+    DateTime targetDate = DateTime(2024, 1, 1, 12, 0, 0); // Target date: January 1, 2023, 12:00 PM
 
-  int daysDifference = calculateDaysDifference(startDate, endDate);
+    Duration difference = calculateTimeDifference(currentDate, targetDate);
 
-  print('The difference is $daysDifference days.');
+    print("Time difference: ${difference.inHours} hours, ${difference.inMinutes % 60} minutes, ${difference.inSeconds % 60} seconds");
+  } catch (e) {
+    print("Error: $e");
+  }
 }
 
-int calculateDaysDifference(DateTime startDate, DateTime endDate) {
-  // Calculate the difference in days
-  int days = endDate.difference(startDate).inDays;
+Duration calculateTimeDifference(DateTime currentTime, DateTime targetTime) {
+  // Calculate the difference between two DateTime objects
+  Duration timeDifference = targetTime.difference(currentTime);
 
-  return days;
+  return timeDifference;
 }

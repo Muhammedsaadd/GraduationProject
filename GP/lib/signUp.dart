@@ -1,7 +1,7 @@
 import 'dart:convert';
 // import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/material.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 // import 'package:grouped_buttons/grouped_buttons.dart';
@@ -89,35 +89,35 @@ class _Sign_UpState extends State<Sign_Up> {
       print(data);
       if (data == "Error") {
         Navigator.pop(context);
-        Fluttertoast.showToast(
-            msg: "Something Went Wrong Please Try Again Later",
-            toastLength: Toast.LENGTH_SHORT,
-            gravity: ToastGravity.CENTER,
-            timeInSecForIosWeb: 1,
-            backgroundColor: Colors.red,
-            textColor: Colors.white,
-            fontSize: 16.9);
+        // Fluttertoast.showToast(
+        //     msg: "Something Went Wrong Please Try Again Later",
+        //     toastLength: Toast.LENGTH_SHORT,
+        //     gravity: ToastGravity.CENTER,
+        //     timeInSecForIosWeb: 1,
+        //     backgroundColor: Colors.red,
+        //     textColor: Colors.white,
+        //     fontSize: 16.9);
       } else if (data == "Success") {
         getUserData(mobile.text);
-        Fluttertoast.showToast(
-            msg: "Registration Successful",
-            toastLength: Toast.LENGTH_SHORT,
-            gravity: ToastGravity.CENTER,
-            timeInSecForIosWeb: 1,
-            backgroundColor: Colors.green,
-            textColor: Colors.white,
-            fontSize: 16.0);
+        // Fluttertoast.showToast(
+        //     msg: "Registration Successful",
+        //     toastLength: Toast.LENGTH_SHORT,
+        //     gravity: ToastGravity.CENTER,
+        //     timeInSecForIosWeb: 1,
+        //     backgroundColor: Colors.green,
+        //     textColor: Colors.white,
+        //     fontSize: 16.0);
       }
       if (data == "Already Exists") {
         Navigator.pop(context);
-        Fluttertoast.showToast(
-            msg: "This Mobile Number Already Exist!",
-            toastLength: Toast.LENGTH_SHORT,
-            gravity: ToastGravity.CENTER,
-            timeInSecForIosWeb: 1,
-            backgroundColor: Colors.red,
-            textColor: Colors.white,
-            fontSize: 16.9);
+        // Fluttertoast.showToast(
+        //     msg: "This Mobile Number Already Exist!",
+        //     toastLength: Toast.LENGTH_SHORT,
+        //     gravity: ToastGravity.CENTER,
+        //     timeInSecForIosWeb: 1,
+        //     backgroundColor: Colors.red,
+        //     textColor: Colors.white,
+        //     fontSize: 16.9);
       } else {
         print("error");
       }
@@ -777,14 +777,14 @@ class _Sign_UpState extends State<Sign_Up> {
                                         email.text == "" ||
                                         mobile.text == "" ||
                                         pass.text == "") {
-                                      Fluttertoast.showToast(
-                                          msg: "Please Fill All the Fields",
-                                          toastLength: Toast.LENGTH_SHORT,
-                                          gravity: ToastGravity.CENTER,
-                                          timeInSecForIosWeb: 1,
-                                          backgroundColor: Colors.red,
-                                          textColor: Colors.white,
-                                          fontSize: 16.9);
+                                      // Fluttertoast.showToast(
+                                      //     msg: "Please Fill All the Fields",
+                                      //     toastLength: Toast.LENGTH_SHORT,
+                                      //     gravity: ToastGravity.CENTER,
+                                      //     timeInSecForIosWeb: 1,
+                                      //     backgroundColor: Colors.red,
+                                      //     textColor: Colors.white,
+                                      //     fontSize: 16.9);
                                     } else {
                                       showAlertDialog(context);
 
